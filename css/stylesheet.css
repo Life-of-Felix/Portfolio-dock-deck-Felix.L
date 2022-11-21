@@ -43,16 +43,46 @@ h1, h2, h3, h4, p, a{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 1;
 }
 #displayCard{
     grid-area: cd;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: visible;
 }
-header img{
-    height: 70%;
+
+#displayCard img{
+    height: 50%;
+    width: auto;
+    z-index: 2;
+    animation-name: cardFall;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+
 }
+
+@keyframes cardFall {
+    0%{
+
+    }
+
+    30%{
+        transform: rotate(30deg);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+
+
+
+    100%{
+
+    }
+}
+
 header h1{
     font-size: 15em;
     text-transform: capitalize;
