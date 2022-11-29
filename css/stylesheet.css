@@ -137,7 +137,8 @@ ul li a:hover{
     cursor: not-allowed;
 }
 aside{
-    height: 30vh;
+    height: auto;
+    padding: 10vw;
     min-height: 10em;
     display: flex;
     justify-content: center;
@@ -239,3 +240,35 @@ aside h2{
     rotate: 180deg;
 }
 
+@media screen and (max-width: 880px){
+
+    #displayName h1{
+        font-size: 350%;
+    }
+    #displayName h2{
+        font-size: 250%;
+    }
+    #displayCard img{
+        max-width: 30vw;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    aside h2{
+        margin: 1vh;
+    }
+    .timLahanArt{
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+        'tl'
+        'tx'
+        'de'
+        ;
+    }
+    #photoTimLahan{
+        padding-bottom: 10vh;
+    }
+}
